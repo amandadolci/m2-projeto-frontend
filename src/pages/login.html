@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/globalStyles.css" />
+    <link rel="stylesheet" href="../styles/login.css" />
+    <!-- SCRIPT -->
+    <script type="module" src="../scripts/login.js" defer></script>
+    <title>Kenzie Empresas - Login</title>
+  </head>
+  <body>
+    <header class="login__header header">
+      <div class="login__header--menu header--menu">
+        <div class="header__menu--logo">
+          <img
+            class="menu__logo--ellipse"
+            src="../assets/icons/purple-ellipse.svg"
+          />
+          <img
+            class="menu__logo--name"
+            src="../assets/icons/kenzie-empresas.svg"
+            alt="Logo da Kenzie Empresas"
+          />
+        </div>
+        <img
+          class="header__menu--openBtn menu__button"
+          src="../assets/icons/hamburguer-menu.svg"
+          aria-label="Abrir Menu"
+        />
+        <img
+          class="header__menu--closeBtn menu__button hidden"
+          src="../assets/icons/X.svg"
+          aria-label="Fechar Menu"
+        />
+      </div>
+      <nav class="login__header--nav header--nav hidden">
+        <a class="header__nav--home button--white" href="../../index.html"
+          >Home</a
+        >
+        <a class="header__nav--register button--blue" href="./register.html"
+          >Cadastro</a
+        >
+      </nav>
+      <div class="header--after hidden"></div>
+    </header>
+    <main class="login__main">
+      <div class="login__main--container">
+        <div class="login__container--header">
+          <h1>Login</h1>
+          <p>Preencha os campos para realizar login</p>
+        </div>
+        <form class="login__container--form">
+          <input
+            class="login__form--emailInput login__input"
+            type="email"
+            name="email"
+            placeholder="Seu e-mail"
+            autocomplete="off"
+          />
+          <input
+            class="login__form--passwordInput login__input"
+            type="password"
+            name="password"
+            placeholder="Sua senha"
+          />
+          <button class="login__form--loginBtn button--blue" type="submit">
+            Login
+          </button>
+        </form>
+        <div class="login__container--redirect">
+          <p>
+            Ainda não tem conta? Cadastre-se <a href="./register.html">aqui!</a>
+          </p>
+          <a
+            class="login__redirect--button button--white"
+            href="./register.html"
+            >Cadastre-se</a
+          >
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/globalStyles.css" />
+    <link rel="stylesheet" href="../styles/modal.css" />
+    <link rel="stylesheet" href="../styles/userpage.css" />
+    <!-- SCRIPT -->
+    <script type="module" src="../scripts/userpage.js" defer></script>
+    <title>Kenzie Empresas - Userpage</title>
+  </head>
+  <body>
+    <header class="userpage__header header">
+      <div class="userpage__header--menu header--menu">
+        <div class="header__menu--logo">
+          <img
+            class="menu__logo--ellipse"
+            src="../assets/icons/purple-ellipse.svg"
+          />
+          <img
+            class="menu__logo--name"
+            src="../assets/icons/kenzie-empresas.svg"
+            alt="Logo da Kenzie Empresas"
+          />
+        </div>
+        <img
+          class="header__menu--openBtn menu__button"
+          src="../assets/icons/hamburguer-menu.svg"
+          aria-label="Abrir Menu"
+        />
+        <img
+          class="header__menu--closeBtn menu__button hidden"
+          src="../assets/icons/X.svg"
+          aria-label="Fechar Menu"
+        />
+      </div>
+      <nav class="userpage__header--nav header--nav hidden">
+        <button class="header__nav--logout button--white">Logout</button>
+      </nav>
+      <div class="header--after hidden"></div>
+    </header>
+    <main class="userpage__main">
+      <section class="userpage__main--info">
+        <h1 class="user__info--name"></h1>
+        <span class="user__info--details">
+          <p class="user__details--email"></p>
+          <p class="user__details--professionalLevel"></p>
+          <p class="user__details--workType"></p>
+        </span>
+        <img
+          class="user__interaction--edit interaction--icon"
+          src="../assets/icons/purple-pencil.svg"
+          aria-label="Editar usuário"
+        />
+      </section>
+      <section class="userpage__main--coworkers">
+        <div class="userpage__coworkers--header hidden"></div>
+        <h1 class="userpage__coworkers--none hidden"></h1>
+        <ul class="userpage__coworkers--list hidden">
+          <!-- <li class="coworkers__list--card">
+            <div class="coworker__card--details">
+              <h2>Username</h2>
+              <small>Nível Profissional</small>
+            </div>
+          </li> -->
+        </ul>
+      </section>
+    </main>
+    <dialog class="modal__controller">
+      <div class="modal__container">
+        <img
+          class="modal__container--closeBtn"
+          src="../assets/icons/X.svg"
+          aria-label="Fechar a janela"
+        />
+        <h1 class="modal__container--title">Editar Perfil</h1>
+        <form class="modal__container--inputs">
+          <input
+            class="modal__input--text modal__input"
+            type="text"
+            name="username"
+            placeholder="Seu nome"
+            autocomplete="off"
+          />
+          <input
+            class="modal__input--text modal__input"
+            type="email"
+            name="email"
+            placeholder="Seu e-mail"
+          />
+          <input
+            class="modal__input--text modal__input"
+            type="password"
+            name="password"
+            placeholder="Sua senha"
+          />
+          <button class="modal__container--submitBtn button--blue">
+            Editar perfil
+          </button>
+        </form>
+      </div>
+    </dialog>
+  </body>
+</html>

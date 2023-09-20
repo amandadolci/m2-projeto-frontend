@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/globalStyles.css" />
+    <link rel="stylesheet" href="../styles/modal.css" />
+    <link rel="stylesheet" href="../styles/adminpage.css" />
+    <!-- SCRIPT -->
+    <script type="module" src="../scripts/adminpage.js" defer></script>
+    <title>Kenzie Empresas - Página do Administrador</title>
+  </head>
+  <body>
+    <header class="adminpage__header header">
+      <div class="adminpage__header--menu header--menu">
+        <div class="header__menu--logo">
+          <img
+            class="menu__logo--ellipse"
+            src="../assets/icons/purple-ellipse.svg"
+          />
+          <img
+            class="menu__logo--name"
+            src="../assets/icons/kenzie-empresas.svg"
+            alt="Logo da Kenzie Empresas"
+          />
+        </div>
+        <img
+          class="header__menu--openBtn menu__button"
+          src="../assets/icons/hamburguer-menu.svg"
+          aria-label="Abrir Menu"
+        />
+        <img
+          class="header__menu--closeBtn menu__button hidden"
+          src="../assets/icons/X.svg"
+          aria-label="Fechar Menu"
+        />
+      </div>
+      <nav class="adminpage__header--nav header--nav hidden">
+        <button class="header__nav--logout button--white">Logout</button>
+      </nav>
+      <div class="header--after hidden"></div>
+    </header>
+    <main class="adminpage__main">
+      <section class="main__container--departments">
+        <div class="departments__container--header">
+          <h1>Departamentos</h1>
+          <div class="departments__header--select select">
+            <p>Selecionar empresa</p>
+            <img
+              class="header__select--downArrow downArrow"
+              src="../assets/icons/dropdown-arrow.svg"
+              aria-label="Mostrar lista de empresas"
+            />
+            <ul class="header__select--companies options__container hidden">
+              <!-- <li class="select__companies option">Teste</li> -->
+            </ul>
+          </div>
+          <button class="departments__header--create button--blue">
+            <img
+              src="../assets/icons/+.svg"
+              aria-label="Criar novo departamento"
+            />Criar
+          </button>
+        </div>
+        <ul class="departments__container--list">
+          <!-- <li class="department__list--card">
+            <div class="department__card--details">
+              <h2>Departament Name</h2>
+              <small> Departament Description</small>
+              <small>Company Name</small>
+            </div>
+            <div class="department__card--interaction">
+              <img
+                class="department__interaction--moreDetails interaction--icon"
+                src="../assets/icons/purple-eye.svg"
+                aria-label="Visualizar mais detalhes do departamento"
+              />
+              <img
+                class="department__interaction--edit interaction--icon"
+                src="../assets/icons/purple-pencil.svg"
+                aria-label="Editar departamento"
+              />
+              <img
+                class="department__interaction--delete interaction--icon"
+                src="../assets/icons/bin.svg"
+                aria-label="Deletar departamento"
+              />
+            </div>
+          </li> -->
+        </ul>
+      </section>
+      <section class="main__container--users">
+        <h1>Usuários cadastrados</h1>
+        <ul class="users__container--list">
+          <!-- <li class="user__list--card">
+            <div class="user__card--details">
+              <h2>Username</h2>
+              <small>Nível Profissional</small>
+              <small>Company Name</small>
+            </div>
+            <div class="user__card--interaction">
+              <img
+                class="user__interaction--edit interaction--icon"
+                src="../assets/icons/purple-pencil.svg"
+                aria-label="Editar usuário"
+              />
+              <img
+                class="user__interaction--delete interaction--icon"
+                src="../assets/icons/bin.svg"
+                aria-label="Deletar usuário"
+              />
+            </div>
+          </li> -->
+        </ul>
+      </section>
+    </main>
+    <dialog class="modal__controller">
+      <div class="modal__container"></div>
+      <!-- <div class="modal__container"> MODAL DELETAR
+        <img
+          class="modal__container--closeBtn"
+          src="../assets/icons/X.svg"
+          aria-label="Fechar a janela"
+        />
+        <h1 class="modal__container--title"></h1>
+        <button class="modal__container--confirmBtn button--green"></button>
+      </div> -->
+      <!-- <div class="modal__container"> MODAL EDITAR
+        <img
+          class="modal__container--closeBtn"
+          src="../assets/icons/X.svg"
+          aria-label="Fechar a janela"
+        />
+        <h1 class="modal__container--title">Editar Departamento</h1>
+        <div class="modal__container--inputs">
+          <input
+            class="modal__input--text modal__input"
+            type="text"
+            name="name"
+            placeholder="Nome do departamento"
+          />
+          <input
+            class="modal__input--text modal__input"
+            type="text"
+            name="description"
+            placeholder="Descrição"
+          />
+          <textarea
+            class="modal__input--textarea modal__input"
+            placeholder="Descrição do departamento"
+            name="description"
+            wrap="soft"
+          ></textarea>
+          <div class="modal__input--select select">
+            <p>Selecionar Empresa</p>
+            <img
+              class="modal__select--downArrow"
+              src="../assets/icons/dropdown-arrow.svg"
+              aria-label="Mostrar lista de empresas"
+            />
+            <ul class="modal__select--list options__container hidden">
+              <li class="modal__select--option option">Teste</li>
+            </ul>
+          </div>
+          <button class="modal__container--submitBtn button--blue">
+            Salvar alterações
+          </button>
+        </div>
+      </div> -->
+      <!-- <div class="modal__container"> MODAL +DETALHES
+        <img
+          class="modal__container--closeBtn"
+          src="../assets/icons/X.svg"
+          aria-label="Fechar a janela"
+        />
+        <h1 class="modal__container--title">Nome do departamento</h1>
+        <div class="modal__container--section">
+          <div class="modal__section--description">
+            <h2>Descrição do departamento</h2>
+            <p>Empresa pertencente</p>
+          </div>
+          <div class="modal__section--users">
+            <div class="modal__input--select select">
+              <p>Selecionar usuário</p>
+              <img
+                class="modal__select--downArrow"
+                src="../assets/icons/dropdown-arrow.svg"
+                aria-label="Mostrar lista de usuários"
+              />
+              <ul class="modal__select--list options__container hidden">
+                <li class="modal__select--option option">Teste</li>
+              </ul>
+            </div>
+            <button class="modal__container--confirmBtn button--green">
+              Contratar
+            </button>
+          </div>
+        </div>
+        <div class="modal__container--list">
+          <ul class="modal__list--users">
+            <li class="list__user--card">
+              <div class="user__card--details">
+                <h2>Username</h2>
+                <small>Nível Profissional</small>
+                <small>Company Name</small>
+              </div>
+              <button class="user__card--dismissBtn button--red">
+                Desligar
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div> -->
+    </dialog>
+  </body>
+</html>

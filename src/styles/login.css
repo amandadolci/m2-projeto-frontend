@@ -1,0 +1,133 @@
+body {
+  background-image: url('../assets/img/portrait-picture.svg');
+  background-repeat: no-repeat;
+  background-position: center 60px;
+  background-size: cover;
+  /* background-size: auto 100%; */
+  /* min-height: 35.4375rem; */
+  aspect-ratio: 3 / 4;
+}
+
+/* HEADER: GLOBALSTYLES.CSS */
+
+.login__main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login__main--container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 29.375rem;
+  background-color: var(--white95);
+  padding: 2.4375rem 1.0625rem;
+  gap: 1rem;
+}
+
+.login__container--header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.5rem;
+}
+
+.login__container--header > h1 {
+  font-size: 2rem;
+}
+
+.login__container--form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.9063rem;
+}
+
+.login__form--loginBtn {
+  width: 100%;
+}
+
+.login__container--redirect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 1.625rem;
+  padding-top: 0.625rem;
+}
+
+.login__container--redirect > p > a {
+  color: var(--blue);
+}
+
+.login__container--redirect > p > a:hover {
+  text-decoration: underline;
+}
+
+.login__redirect--button {
+  background-color: transparent;
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (min-width: 768.1px) {
+  body {
+    background-image: url('../assets/img/landscape-picture.svg');
+    background-position: center 80px;
+    background-size: cover;
+    aspect-ratio: 3 / 2;
+    min-width: 48rem;
+  }
+
+  .header {
+    min-width: 48.5rem;
+  }
+
+  .login__header--nav {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+  }
+
+  .login__main {
+    justify-content: flex-start;
+    padding-top: 5.5rem;
+  }
+
+  @media (min-height: 750px) {
+    .login__main {
+      padding-top: 11.25rem;
+    }
+  }
+
+  .login__main--container {
+    width: 31.625rem;
+    height: 30.5625rem;
+    padding: 2.4375rem 2.625rem;
+    gap: 1.5rem;
+  }
+
+  .login__container--header {
+    gap: 0.6875rem;
+  }
+
+  .login__container--header > h1 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1.125rem;
+  }
+
+  .login__container--redirect {
+    gap: 1.5rem;
+    padding-top: 0;
+  }
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/globalStyles.css" />
+    <link rel="stylesheet" href="../styles/register.css" />
+    <!-- SCRIPT -->
+    <script type="module" src="../scripts/register.js" defer></script>
+    <title>Kenzie Empresas - Cadastro</title>
+  </head>
+  <body>
+    <header class="register__header header">
+      <div class="register__header--menu header--menu">
+        <div class="header__menu--logo">
+          <img
+            class="menu__logo--ellipse"
+            src="../assets/icons/purple-ellipse.svg"
+          />
+          <img
+            class="menu__logo--name"
+            src="../assets/icons/kenzie-empresas.svg"
+            alt="Logo da Kenzie Empresas"
+          />
+        </div>
+        <img
+          class="header__menu--openBtn menu__button"
+          src="../assets/icons/hamburguer-menu.svg"
+          aria-label="Abrir Menu"
+        />
+        <img
+          class="header__menu--closeBtn menu__button hidden"
+          src="../assets/icons/X.svg"
+          aria-label="Fechar Menu"
+        />
+      </div>
+      <nav class="register__header--nav header--nav hidden">
+        <a class="header__nav--home button--white" href="../../index.html"
+          >Home</a
+        >
+        <a class="header__nav--login button--blue" href="./login.html">Login</a>
+      </nav>
+      <div class="header--after hidden"></div>
+    </header>
+    <main class="register__main">
+      <div class="register__main--container">
+        <div class="register__container--header">
+          <h1>Cadastre-se</h1>
+        </div>
+        <form class="register__container--form">
+          <input
+            class="register__form--nameInput signup__input"
+            type="text"
+            name="username"
+            placeholder="Seu nome"
+          />
+          <input
+            class="register__form--emailInput signup__input"
+            type="email"
+            name="email"
+            placeholder="Seu e-mail"
+          />
+          <input
+            class="register__form--passwordInput signup__input"
+            type="password"
+            name="password"
+            placeholder="Sua senha"
+          />
+          <div class="register__form--selectLevel select">
+            <p data-name="professional_level" data-value="">
+              Nível profissional
+            </p>
+            <img
+              class="form__select--downArrow downArrow"
+              src="../assets/icons/dropdown-arrow.svg"
+              aria-label="Selecionar nível profissional"
+            />
+            <ul class="form__select--levelOptions options__container hidden">
+              <li class="select__level option" data-value="estágio">Estágio</li>
+              <li class="select__level option" data-value="júnior">Júnior</li>
+              <li class="select__level option" data-value="pleno">Pleno</li>
+              <li class="select__level option" data-value="sênior">Sênior</li>
+            </ul>
+          </div>
+          <button class="register__form--signupBtn button--blue" type="submit">
+            Cadastre-se
+          </button>
+        </form>
+        <a
+          class="register__form--redirectBtn button--white"
+          href="../../index.html"
+          >Retornar
+        </a>
+      </div>
+    </main>
+  </body>
+</html>

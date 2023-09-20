@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link rel="stylesheet" href="./src/styles/globalStyles.css" />
+    <link rel="stylesheet" href="./src/styles/index.css" />
+    <!-- SCRIPT -->
+    <script type="module" src="./src/scripts/index.js" defer></script>
+    <title>Kenzie Empresas - Página Inicial</title>
+  </head>
+  <body>
+    <header class="homepage__header header">
+      <div class="homepage__header--menu header--menu">
+        <div class="header__menu--logo">
+          <img
+            class="menu__logo--ellipse"
+            src="./src/assets/icons/purple-ellipse.svg"
+          />
+          <img
+            class="menu__logo--name"
+            src="./src/assets/icons/kenzie-empresas.svg"
+            alt="Logo da Kenzie Empresas"
+          />
+        </div>
+        <img
+          class="header__menu--openBtn menu__button"
+          src="./src/assets/icons/hamburguer-menu.svg"
+          aria-label="Abrir Menu"
+        />
+        <img
+          class="header__menu--closeBtn menu__button hidden"
+          src="./src/assets/icons/X.svg"
+          aria-label="Fechar Menu"
+        />
+      </div>
+      <nav class="homepage__header--nav header--nav hidden">
+        <a
+          class="header__nav--login button--white"
+          href="./src/pages/login.html"
+          >Login</a
+        >
+        <a
+          class="header__nav--register button--blue"
+          href="./src/pages/register.html"
+          >Cadastro</a
+        >
+      </nav>
+      <div class="header--after hidden"></div>
+    </header>
+    <main class="homepage__main">
+      <section class="main__section--image hidden">
+        <img
+          src="./src/assets/img/portrait-picture.svg"
+          alt="Três homens em reunião"
+        />
+      </section>
+      <section class="main__section--list">
+        <div class="section__list--header select">
+          <p>Selecionar Setor</p>
+          <img
+            class="list__header--downArrow downArrow"
+            src="./src/assets/icons/down-white-arrow.svg"
+            aria-label="Mostrar lista dos setores"
+          />
+        </div>
+        <ul class="section__list--sectors options__container hidden">
+          <!-- <li class="sectors__list--option"></li> -->
+        </ul>
+        <ul class="section__list--companies">
+          <!-- <li class="section__list--company">
+            <h2 class="list__company--name"></h2>
+            <small class="list__company--hours"></small>
+            <span class="list__company--sector button--white"></span>
+          </li> -->
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

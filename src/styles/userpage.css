@@ -1,0 +1,241 @@
+/* HEADER: GLOBALSTYLES.CSS */
+
+.userpage__main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 1.4375rem 0.8438rem;
+  box-sizing: border-box;
+  gap: 1.5rem;
+}
+
+.userpage__main--info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  border: 1px solid var(--black20);
+  padding: 0.75rem 1.125rem;
+  gap: 0.625rem;
+  height: fit-content;
+  width: 100%;
+}
+
+.user__info--name {
+  font-weight: 700;
+  font-size: 1.375rem;
+}
+
+.user__info--details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  /* font-size: 1.125rem; */
+  gap: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* .user__details--email {
+} */
+
+.user__details--professionalLevel {
+  text-transform: capitalize;
+}
+
+/* .user__details--workType {
+} */
+
+.user__interaction--edit {
+  position: absolute;
+  right: 1.125rem;
+  width: 2rem;
+  height: auto;
+}
+
+.userpage__main--coworkers {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: var(--grey2);
+  border: 1px solid var(--grey1);
+  min-height: 15rem;
+  padding: 5.75rem 1.25rem 1.75rem 1.25rem;
+  position: relative;
+}
+
+.userpage__coworkers--header {
+  background-color: var(--blue);
+  color: var(--white100);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4rem;
+  font-weight: 700;
+  font-size: 1.375rem;
+  text-transform: capitalize;
+}
+
+.userpage__coworkers--none {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.125rem;
+}
+
+.userpage__coworkers--list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: calc(100% + 2.0625rem);
+  padding-right: 2.0625rem;
+  height: 7.5rem;
+  gap: 1.1875rem;
+  overflow-x: auto;
+}
+
+.userpage__coworkers--list::-webkit-scrollbar {
+  width: 0.5625rem;
+  background: var(--white100);
+}
+
+.userpage__coworkers--list::-webkit-scrollbar-thumb {
+  background-color: var(--blue);
+}
+
+.coworkers__list--card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 11.25rem;
+  max-width: 11.25rem;
+  height: 100%;
+  background-color: var(--white100);
+  border-bottom: solid 1px var(--blue);
+  padding: 0.875rem 0.9375rem;
+}
+
+.coworker__card--details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.875rem;
+}
+
+.coworker__card--details > h2 {
+  font-size: 1.25rem;
+}
+
+.coworker__card--details > small {
+}
+
+/* ESTILIZAR ACIMA DESSA LINHA */
+.hidden {
+  display: none;
+}
+
+@media (min-width: 768.1px) {
+  body {
+    height: auto;
+  }
+
+  /* HEADER: GLOBALSTYLES.CSS */
+  .userpage__header--nav {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+  }
+
+  .userpage__main {
+    align-items: center;
+    margin-top: 6.5rem;
+    margin-bottom: 5rem;
+    gap: 3.4375rem;
+    padding: 0;
+  }
+
+  .userpage__main--info {
+    min-width: 48rem;
+    max-width: 73.875rem;
+    padding: 1.25rem 1.9375rem;
+  }
+
+  .user__info--name {
+    font-size: 1.625rem;
+  }
+
+  .user__info--details {
+    flex-direction: row;
+    align-items: center;
+    gap: 9rem;
+    font-size: 1.125rem;
+  }
+  .user__details--email {
+  }
+  .user__details--professionalLevel {
+  }
+  .user__details--workType {
+  }
+  .user__interaction--edit {
+    right: 1.9375rem;
+  }
+
+  .userpage__main--coworkers {
+    padding: 6.75rem 1.25rem 1.75rem 1.25rem;
+    min-width: 48rem;
+    max-width: 73.875rem;
+  }
+
+  .userpage__coworkers--header {
+    height: 5rem;
+    font-size: 1.625rem;
+  }
+
+  .userpage__coworkers--none {
+    font-size: 1.625rem;
+  }
+
+  .userpage__coworkers--list {
+    width: 100%;
+    height: auto;
+    min-height: 4.75rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-right: 0;
+    padding: 1.25rem 1.9375rem;
+    overflow-y: auto;
+  }
+
+  .coworkers__list--card {
+    height: fit-content;
+    min-width: 19.875rem;
+    max-width: 19.875rem;
+  }
+
+  .coworker__card--details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.875rem;
+  }
+
+  .coworker__card--details > h2 {
+    font-size: 1.375rem;
+  }
+
+  .coworker__card--details > small {
+    font-size: 1.125rem;
+  }
+}
