@@ -1,5 +1,5 @@
 const token = JSON.parse(localStorage.getItem('@kenzieEmpresas:token')) || '';
-const baseURL = 'https://api-kenzie-empresas-32u8.onrender.com';
+const baseURL = 'https://api-kenzie-empresas-ran1.onrender.com';
 const requestHeaders = {
 	'Content-Type': 'application/json',
 	Authorization: `Bearer ${token}`,
